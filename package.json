@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
+  },
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js"
@@ -17,8 +21,7 @@
     "express": "^4.18.1",
     "i": "^0.3.7",
     "mongoose": "^6.3.4",
-    "mongoose-auto-increment": "^5.0.1",
-    "npm": "^8.10.0"
+    "mongoose-auto-increment": "^5.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"

@@ -9,7 +9,7 @@ const router = require('./routes');
 
 dbConnection();
 
-const PORT = process.env.PORT || 5500;
+const PORT = process.env.PORT || 5555;
 
 app.use(cors())
 app.use(bodyParser.urlencoded({extended: false,}))
@@ -17,6 +17,6 @@ app.use(bodyParser.json())
 app.use(router);
 
 
-app.listen('5555', () => {
+app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 })
